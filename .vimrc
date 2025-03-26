@@ -14,6 +14,14 @@ let g:netrw_keepdir = 1
 
 let g:netrw_buffer = -1
 
+:set relativenumber
+
+syntax on
+
+filetype on
+
+colorscheme murphy
+
 augroup ProjectDrawer
 
   autocmd!
@@ -25,8 +33,6 @@ augroup ProjectDrawer
   autocmd FileType netrw let g:netrw_buffer = bufnr('%')
 augroup END
 
-
-:set relativenumber
 
 " Function to open or reuse the shared Netrw buffer
 function! OpenSharedNetrw()
